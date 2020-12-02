@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+    --red: rgb(255, 75, 108);
+    --violet: rgb(127, 92, 255);
+    --green: rgb(87, 240, 87);
+    --yellow: rgb(250, 245, 95);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+}
+
+#ludo {
+    border: 5px solid lightgray;
+}
+
+.firstRow {
+    display: flex;
+}
+
+.box {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topBoxRow {
+    display: flex;
+}
+
+.topLeftPlayer {
+    width: 180px;
+    height: 180px;
+    background-color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topRightPlayer {
+    width: 180px;
+    height: 180px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondRow {
+    display: flex;
+}
+
+.leftBoxRow {
+    display: flex;
+}
+
+.middleBox {
+    width: 90px;
+    height: 90px;
+    background-color: whitesmoke;
+}
+
+.rightBoxRow {
+    display: flex;
+}
+
+.thirdRow {
+    display: flex;
+}
+
+.bottomLeftPlayer {
+    width: 180px;
+    height: 180px;
+    background-color: var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomBoxRow {
+    display: flex;
+}
+
+.bottomRightPlayer {
+    width: 180px;
+    height: 180px;
+    background-color: var(--violet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.arrow1 {
+    color: var(--yellow);
+}
+
+.arrow2 {
+    color: var(--green);
+}
+
+.arrow3 {
+    color: var(--violet);
+}
+
+.arrow4 {
+    color: var(--red);
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.p1BoxArea {
+    background-color: var(--green);
+}
+
+.p2BoxArea {
+    background-color: var(--yellow);
+}
+
+.p3BoxArea {
+    background-color: var(--red);
+}
+
+.p4BoxArea {
+    background-color: var(--violet);
+}
+
+.playerInnerBox {
+    background-color: white;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playerInnerBox div div{
+    border: 1px solid lightgray;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.bottomRightPlayer .playerInnerBox div div{
+    background-color:var(--violet);
+}  
+
+.bottomLeftPlayer .playerInnerBox div div{
+    background-color:var(--red);
+}
+
+.topLeftPlayer .playerInnerBox div div{
+    background-color:var(--green);
+}  
+
+.topRightPlayer .playerInnerBox div div{
+    background-color:var(--yellow);
+}
+
+.shape3 {
+    position: relative;
+}
+
+.shape3::after {
+    content: "";
+    position: absolute;
+    left: -31px;
+    right: 0;
+    top: -45px;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-bottom: 45px solid var(--red);
+}
+
+.shape2 {
+    position: relative;
+}
+
+.shape2::after {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 29px;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 45px solid var(--yellow);
+}
+
+.shape1 {
+    position: relative;
+}
+
+.shape1::after {
+    content: "";
+    position: absolute;
+    left: 29px;
+    right: 0px;
+    top: -30px;
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    border-left: 45px solid var(--green);
+}
+
+.shape4 {
+    position: relative;
+}
+
+.shape4::after {
+    content: "";
+    position: absolute;
+    left: -46px;
+    top: -30px;
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    border-right: 45px solid var(--violet);
+}
